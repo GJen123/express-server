@@ -5,7 +5,7 @@ const cors = require('cors');
 // Routes
 const HealthCheckRoute = require('./routes/HealthCheckRoute');
 
-let app = express();
+const app = express();
 
 // CORS-enabled for all origins
 app.use(cors());
@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 // support application/x-www-form-urlencoded post data.
 app.use(bodyParser.urlencoded({
-    extended: false
+    extended: false,
 }));
 
 // Register health check route
