@@ -1,0 +1,30 @@
+{
+  "name": "@gjen/express-server",
+  "version": "0.0.0",
+  "description": "A NodeJS + Express server by GJen",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GJen123/express-server.git"
+  },
+  "keywords": [
+    "Express",
+    "NodeJS"
+  ],
+  "author": "GJen Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GJen123/express-server/issues"
+  },
+  "homepage": "https://github.com/GJen123/express-server#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "yargs": "^15.0.2"
+  }
+}
