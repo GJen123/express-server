@@ -20,7 +20,8 @@
 	"scripts": {
 		"lint": "eslint src/. --ext .js",
 		"start": "node ./src/server.js",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "mocha test/*.js --colors --timeout 50000",
+		"coverage": "nyc --reporter=html --reporter=text npm run test"
 	},
 	"husky": {
 		"hooks": {
@@ -34,9 +35,13 @@
 		"yargs": "^15.0.2"
 	},
 	"devDependencies": {
+		"chai": "^4.2.0",
 		"eslint": "^6.8.0",
 		"eslint-config-airbnb-base": "^14.0.0",
 		"eslint-plugin-import": "^2.19.1",
-		"husky": "^3.1.0"
+		"husky": "^3.1.0",
+		"mocha": "^6.2.2",
+		"nyc": "^15.0.0",
+		"supertest": "^4.0.2"
 	}
 }
